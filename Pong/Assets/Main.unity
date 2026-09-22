@@ -1783,7 +1783,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc6b401aad6db094c8d34ffff1613852, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ball
-  speed: 100
+  speed: 200
 --- !u!61 &1233802268
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2298,9 +2298,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1357095738351945442, guid: 36d863dd16cf0fd46a56fc42989d9bac, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1357095738351945442, guid: 36d863dd16cf0fd46a56fc42989d9bac, type: 3}
+      propertyPath: m_Constraints
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1357095738351945442, guid: 36d863dd16cf0fd46a56fc42989d9bac, type: 3}
+      propertyPath: m_LinearDamping
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1357095738351945442, guid: 36d863dd16cf0fd46a56fc42989d9bac, type: 3}
+      propertyPath: m_AngularDamping
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5296598574498665562, guid: 36d863dd16cf0fd46a56fc42989d9bac, type: 3}
+      propertyPath: speed
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 5296598574498665562, guid: 36d863dd16cf0fd46a56fc42989d9bac, type: 3}
+      propertyPath: rotationSpeed
+      value: 500
+      objectReference: {fileID: 0}
     - target: {fileID: 7645918455799975218, guid: 36d863dd16cf0fd46a56fc42989d9bac, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8
+      value: -7.75
       objectReference: {fileID: 0}
     - target: {fileID: 7645918455799975218, guid: 36d863dd16cf0fd46a56fc42989d9bac, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2355,6 +2379,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2770366691828366183, guid: 0ebf69f662f2c5f498536ab3385c51f1, type: 3}
+      propertyPath: m_Constraints
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6478748025768741959, guid: 0ebf69f662f2c5f498536ab3385c51f1, type: 3}
       propertyPath: ball
       value: 

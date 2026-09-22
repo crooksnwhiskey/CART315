@@ -8,4 +8,12 @@ I tried to make the game using the downloaded prefabs, without copying the scene
 
 When I turned off the z rotation constraint, the ball would just plow through the paddle, so I increased the mass of the paddle, which made it feel sluggish, but at least the ball can bounce off of it. 
 
-To
+To fix the sluggish feeling, I turned up the linear damping to 100 and increased the paddle speed to 500.
+
+Some ideas I have now 
+
+- let the player spin with a and d keys
+- penalize the last player who touched the ball if the ball reaches a certain low speed.
+
+
+Used this video to help with rotation. https://youtu.be/2NOX7xZIw-Q

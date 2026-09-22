@@ -18,5 +18,10 @@ public class PlayerController : MonoBehaviour
             _direction = Vector2.down;
 
         paddle.direction = _direction;
+
+        if (Keyboard.current.aKey.isPressed)
+            paddle.transform.Rotate(Vector3.forward * paddle.rotationSpeed * Time.deltaTime);
+        else if (Keyboard.current.dKey.isPressed)
+            paddle.transform.Rotate(Vector3.back * paddle.rotationSpeed * Time.deltaTime);
     }
 }

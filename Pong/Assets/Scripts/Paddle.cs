@@ -11,6 +11,8 @@ public class Paddle : MonoBehaviour
 
     public Vector2 direction;
 
+    public float rotationSpeed = 100.0f;
+
     private void Awake()
     {
         _rigidBody = GetComponent<Rigidbody2D>();
@@ -22,5 +24,6 @@ public class Paddle : MonoBehaviour
         if (direction.sqrMagnitude == 0) return;
 
         _rigidBody.AddForce(direction * speed);
+    
     }
 }
