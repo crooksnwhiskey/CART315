@@ -22,22 +22,6 @@
             }
           }
         ]
-      },
-      {
-        "id": "ad66187b9339bf2b",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "e461c01292f0ec35",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
