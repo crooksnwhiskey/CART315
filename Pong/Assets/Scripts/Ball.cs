@@ -5,7 +5,7 @@ using Random = UnityEngine.Random;
 public class Ball : MonoBehaviour
 {
     private Rigidbody2D _rigidBody;
-
+    public float baseSpeed = 100.0f;
     public float speed = 100.0f;
 
     private void Awake()
@@ -19,14 +19,24 @@ public class Ball : MonoBehaviour
         _rigidBody.angularVelocity = 0;
         transform.position = Vector3.zero;
     }
+ 
 
     public void AddStartingForce()
     {
         float x = Random.value < 0.5f ? -1.0f : 1.0f;
-        float y = (Random.value < 0.5f ? -1.0f : 1.0f) * Random.Range(0.5f, 0.9f);
+        float y = (Random.value < 0.5f ? -1.0f : 1.0f ) * Random.Range(0.5f, 0.9f);
 
         Vector2 direction = new Vector2(x, y);
 
         _rigidBody.AddForce(direction * speed);
+    }
+    public void AddForce(Vector2 force)
+    {
+        _rigidBody.AddForce(force);
+    }
+    private void FixedUpdate()
+    {
+        _rigidBody.linearVelocity = _rigidBody.linearVelocity.normalized * speed;
+        
     }
 }

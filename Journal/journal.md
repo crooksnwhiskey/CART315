@@ -17,3 +17,11 @@ Some ideas I have now
 
 
 Used this video to help with rotation. https://youtu.be/2NOX7xZIw-Q
+
+used that video to help get the ball at a certain speed that increases as well.
+
+the problem of the ball being too vertical still remains.
+
+I really cant fix it on my own so im going to try to lean into it?
+
+maybe the ceiling and floor can have some sort of force that launches the ball towards the other direction or something idk.
