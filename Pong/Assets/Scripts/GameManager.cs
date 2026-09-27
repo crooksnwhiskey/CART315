@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     {
         ball.ResetBall();
         ball.AddStartingForce();
+        ball.speed = ball.baseSpeed;
     }
 
     public void CourtTriggered(int courtId)
