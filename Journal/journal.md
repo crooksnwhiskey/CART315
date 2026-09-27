@@ -33,3 +33,7 @@ After sleeping on it, I think the idea of adding areas that can lauch the ball t
 Using unity's guides and the vscode suggestions (idk if thats allowed lol) I made a boost pad-like object that launches the ball to the direction of the side of the pad it hits. this adds a balance of randomness but also skill, and I like it better than my original idea.
 
 whats next is to clean up the game and either take away the cpu and add another player or remove the rotation on the paddles so its more balanced.
+
+Spet 27
+
+all the basic game mechanics are fixed and the core game runs smoothly. whats next is to give the game a makeover and make it look better. I can do this by finding a theme or a common 
