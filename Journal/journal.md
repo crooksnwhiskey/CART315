@@ -1,3 +1,5 @@
+PROTOTYPE 1
+
 Sept 18 - Sept 22
 
 My original Idea was to create a version of pong where the paddles were locked on the x axis, but the rotation was unlocked which would let the player "spin" the paddle and see how the ball would interact with that.
@@ -36,4 +38,11 @@ whats next is to clean up the game and either take away the cpu and add another 
 
 Spet 27
 
-all the basic game mechanics are fixed and the core game runs smoothly. whats next is to give the game a makeover and make it look better. I can do this by finding a theme or a common 
+all the basic game mechanics are fixed and the core game runs smoothly. whats next is to give the game a makeover and make it look better. I can do this by finding a theme or add to the interface.
+
+Sept 29
+
+added some simple arrows to help the player.
+
+overall im happy with how the prototype turned out, I tried not to make it too overwhelmed with new mechanics because I have a history of adding too many things and making the game unplayable. 
+I like how my game now has a much steeper skill curve while still being very playable!
