@@ -2551,7 +2551,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1357095738351945442, guid: 36d863dd16cf0fd46a56fc42989d9bac, type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1357095738351945442, guid: 36d863dd16cf0fd46a56fc42989d9bac, type: 3}
       propertyPath: m_BodyType
@@ -2563,15 +2563,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1357095738351945442, guid: 36d863dd16cf0fd46a56fc42989d9bac, type: 3}
       propertyPath: m_LinearDamping
-      value: 100
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1357095738351945442, guid: 36d863dd16cf0fd46a56fc42989d9bac, type: 3}
       propertyPath: m_AngularDamping
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 5296598574498665562, guid: 36d863dd16cf0fd46a56fc42989d9bac, type: 3}
       propertyPath: speed
-      value: 500
+      value: 1500
       objectReference: {fileID: 0}
     - target: {fileID: 5296598574498665562, guid: 36d863dd16cf0fd46a56fc42989d9bac, type: 3}
       propertyPath: rotationSpeed
