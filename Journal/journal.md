@@ -46,3 +46,16 @@ added some simple arrows to help the player.
 
 overall im happy with how the prototype turned out, I tried not to make it too overwhelmed with new mechanics because I have a history of adding too many things and making the game unplayable. 
 I like how my game now has a much steeper skill curve while still being very playable!
+
+**Prototype 2**
+
+oct 5:
+
+I started by brainstorming which games I like that I could take inspiration from.
+I am having a hard time coming up with combinations.
+I think I need to think simpler.
+
+oct 8 
+
+I was looking through my embarrassingly giant game library trying to think of games that would mesh well with the provided templates and one game really stood out to me. Superhot. I was thinking of using the time mechanics and putting it inside flappy bird.
+
