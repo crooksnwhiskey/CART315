@@ -59,3 +59,6 @@ oct 8
 
 I was looking through my embarrassingly giant game library trying to think of games that would mesh well with the provided templates and one game really stood out to me. Superhot. I was thinking of using the time mechanics and putting it inside flappy bird.
 
+oct 10
+
+after looking at the code for flappy bird, i couldnt figure out a reasonable way to do the superhot time slow, so I came up with a different game instead. my new idea is to get inspiration from the fromsoft games like sekiro and add it to brick breaker. my initial idea is to add a parry timer countdown when a button is presses and if the ball hits the paddle within that timer then the ball gets parried, and if not then the player takes damage.
