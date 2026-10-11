@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
 
     public int level { get; private set; } = 1;
     public int score { get; private set; } = 0;
-    public int lives { get; private set; } = 3;
+    public int lives { get; private set; } = 15;
 
 
     private void Awake()
@@ -91,7 +91,7 @@ public class GameManager : MonoBehaviour
     private void NewGame()
     {
         score = 0;
-        lives = 3;
+        lives = 15;
 
         LoadLevel(1);
     }
