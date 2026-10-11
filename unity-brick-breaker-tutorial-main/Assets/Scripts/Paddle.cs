@@ -8,6 +8,12 @@ public class Paddle : MonoBehaviour
 
     public float speed = 30f;
     public float maxBounceAngle = 75f;
+    public float parryWindow = 0.2f;
+    public float parryCooldown = 0.5f;
+
+    private float parryTimer;
+    private float cooldownTimer;
+
 
     private void Awake()
     {
@@ -34,6 +40,19 @@ public class Paddle : MonoBehaviour
         } else {
             direction = Vector2.zero;
         }
+
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            if (cooldownTimer <= 0f) {
+                parryTimer = parryWindow;
+                cooldownTimer = parryCooldown;
+                Debug.Log("Parry activated!");
+            } else {
+                Debug.Log("Parry is on cooldown!");
+            }
+        }
+
+        if (parryTimer > 0f) parryTimer -= Time.deltaTime;
+        if (cooldownTimer > 0f) cooldownTimer -= Time.deltaTime;
     }
 
     private void FixedUpdate()
@@ -48,6 +67,15 @@ public class Paddle : MonoBehaviour
         if (!collision.gameObject.CompareTag("Ball")) {
             return;
         }
+            if (parryTimer > 0f) {
+                Debug.Log("parry");
+            }
+            else{
+                Debug.Log("hit");
+            }
+           
+
+        
 
         Rigidbody2D ball = collision.rigidbody;
         Collider2D paddle = collision.otherCollider;

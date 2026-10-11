@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     public int score { get; private set; } = 0;
     public int lives { get; private set; } = 3;
 
+
     private void Awake()
     {
         if (Instance != null) {
