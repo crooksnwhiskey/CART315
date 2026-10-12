@@ -13,11 +13,13 @@ public class Paddle : MonoBehaviour
 
     private float parryTimer;
     private float cooldownTimer;
+    private Flash flash;
 
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        flash = GetComponent<Flash>();
     }
 
     private void Start()
@@ -48,7 +50,7 @@ public class Paddle : MonoBehaviour
                 Debug.Log("Parry activated!");
             } else {
                 Debug.Log("Parry is on cooldown!");
-                gameObject.GetComponent<SpriteRenderer>().color = Color.red;
+                
                GameManager.Instance.takeDamage(1);
                 if (GameManager.Instance.health <= 0) {
                     return;
@@ -78,9 +80,8 @@ public class Paddle : MonoBehaviour
             else{
                 Debug.Log("hit");
                 GameManager.Instance.takeDamage(1);
-                if (GameManager.Instance.health <= 0) {
-                    return;
-                }
+                
+                flash.flash(Color.red, 0.1f);
             }
            
 

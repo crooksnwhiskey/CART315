@@ -67,3 +67,5 @@ oct 11
 
 I made the basic parry system, but it was very hard to make work with a healthbar. I was able to figure it out after watching this tutorial: https://youtu.be/BLfNP4Sc_iA
 with the damage system now working, I feel like I have an actual game. The problem now is Whats next? how can I make the game feel more like sekiro?. I think I can start by either making a "boss" health bar that just displays the number of bricks left, or I can make something happen when the player dies, because now it just restarts.
+
+I know I also want to add visual cues so that the player knows if they parried
