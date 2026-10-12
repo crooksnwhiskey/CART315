@@ -62,3 +62,8 @@ I was looking through my embarrassingly giant game library trying to think of ga
 oct 10
 
 after looking at the code for flappy bird, i couldnt figure out a reasonable way to do the superhot time slow, so I came up with a different game instead. my new idea is to get inspiration from the fromsoft games like sekiro and add it to brick breaker. my initial idea is to add a parry timer countdown when a button is presses and if the ball hits the paddle within that timer then the ball gets parried, and if not then the player takes damage.
+
+oct 11
+
+I made the basic parry system, but it was very hard to make work with a healthbar. I was able to figure it out after watching this tutorial: https://youtu.be/BLfNP4Sc_iA
+with the damage system now working, I feel like I have an actual game. The problem now is Whats next? how can I make the game feel more like sekiro?. I think I can start by either making a "boss" health bar that just displays the number of bricks left, or I can make something happen when the player dies, because now it just restarts.

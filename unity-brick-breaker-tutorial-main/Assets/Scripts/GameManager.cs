@@ -14,7 +14,16 @@ public class GameManager : MonoBehaviour
 
     public int level { get; private set; } = 1;
     public int score { get; private set; } = 0;
-    public int lives { get; private set; } = 15;
+    public int health { get; private set; } = 15;
+    public int maxHealth { get; private set; } = 15;
+
+public void takeDamage(int damage) {
+        health -= damage;
+        
+        if (health <= 0) {
+            GameOver();
+        }
+    }
 
 
     private void Awake()
@@ -66,9 +75,9 @@ public class GameManager : MonoBehaviour
 
     public void OnBallMiss()
     {
-        lives--;
+        takeDamage(1);
 
-        if (lives > 0) {
+        if (health > 0) {
             ResetLevel();
         } else {
             GameOver();
@@ -91,7 +100,7 @@ public class GameManager : MonoBehaviour
     private void NewGame()
     {
         score = 0;
-        lives = 15;
+        health = maxHealth;
 
         LoadLevel(1);
     }

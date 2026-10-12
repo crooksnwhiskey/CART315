@@ -1,12 +1,14 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField] private int maxHealth = 100;
-    private int currentHealth;
+    public Image healthBar;
+    private int maxHealth = 15;
 
-    private void Start()
+    private void Update()
     {
-        currentHealth = maxHealth;
+        float fillAmount = (float)GameManager.Instance.health / maxHealth;
+        healthBar.fillAmount = fillAmount;
     }
 }
