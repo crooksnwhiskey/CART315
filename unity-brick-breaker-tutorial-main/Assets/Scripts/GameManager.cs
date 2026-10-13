@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
     public int score { get; private set; } = 0;
     public int health { get; private set; } = 15;
     public int maxHealth { get; private set; } = 15;
+    public int bossHealth { get; private set; } = 0;
+    public int maxBossHealth { get; private set; } = 15;
 
 public void takeDamage(int damage) {
         health -= damage;
@@ -24,7 +26,16 @@ public void takeDamage(int damage) {
             GameOver();
         }
     }
-
+public void dealDamage(int damage) {
+        bossHealth += damage;
+        Debug.Log("Boss Health: " + bossHealth);
+        
+        if (bossHealth >= maxBossHealth) {
+            bossHealth = 0;
+        
+            LoadLevel(level + 1);
+        }
+    }
 
     private void Awake()
     {
@@ -101,6 +112,7 @@ public void takeDamage(int damage) {
     {
         score = 0;
         health = maxHealth;
+        bossHealth = 0;
 
         LoadLevel(1);
     }

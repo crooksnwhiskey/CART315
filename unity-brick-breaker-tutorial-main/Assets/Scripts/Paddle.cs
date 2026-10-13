@@ -76,10 +76,13 @@ public class Paddle : MonoBehaviour
         }
             if (parryTimer > 0f) {
                 Debug.Log("parry");
+                flash.flash(Color.blue, 0.1f);
+                GameManager.Instance.dealDamage(1);
             }
             else{
                 Debug.Log("hit");
                 GameManager.Instance.takeDamage(1);
+                GameManager.Instance.dealDamage(-1);
                 
                 flash.flash(Color.red, 0.1f);
             }

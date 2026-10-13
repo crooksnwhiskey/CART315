@@ -69,3 +69,11 @@ I made the basic parry system, but it was very hard to make work with a healthba
 with the damage system now working, I feel like I have an actual game. The problem now is Whats next? how can I make the game feel more like sekiro?. I think I can start by either making a "boss" health bar that just displays the number of bricks left, or I can make something happen when the player dies, because now it just restarts.
 
 I know I also want to add visual cues so that the player knows if they parried
+
+oct 12
+
+today I added a lot. to start I added visual cues for the player so they know if they parried or take damage. then I added a health system for the level that is very similar to sekiro... basically when the player parries a bunch, a bar fills up and if they fill up the bar enough they defeat the level. if the player gets hit or takes damage, the parry bar loses points. there is two ways to beat the game like in sekiro, break all the blocks or parry your way to victory.
+
+now that I have a game that I can say takes inspiraton from sekiro, I wonder what I can do to further make the game like sekiro or just more fun in general.
+
+I still need to add everything to the second level and make everything look nicer. I also maybe want to add words as another visual cue when players parry or get hit.
