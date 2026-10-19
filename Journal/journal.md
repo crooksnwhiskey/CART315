@@ -77,3 +77,11 @@ today I added a lot. to start I added visual cues for the player so they know if
 now that I have a game that I can say takes inspiraton from sekiro, I wonder what I can do to further make the game like sekiro or just more fun in general.
 
 I still need to add everything to the second level and make everything look nicer. I also maybe want to add words as another visual cue when players parry or get hit.
+
+oct 15
+
+after thinking of some more ideas to make the game more sekiro-like, I came up with a couple of ideas.
+first, a big part of sekiro is the ressurection that happens when you die. I feel like i could make ths pretty easily ... also there is unparryable attacks which i can try to implement, but the the game you can dodge and you cant exactly do that in brick breaker, so I was thinking of adding another key that you have to press at random times to dodge.
+
+oct 19
+

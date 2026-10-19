@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     private Ball ball;
     private Paddle paddle;
     private Brick[] bricks;
+    private PopupText popupText;
 
     public int level { get; private set; } = 1;
     public int score { get; private set; } = 0;
@@ -19,12 +20,27 @@ public class GameManager : MonoBehaviour
     public int bossHealth { get; private set; } = 0;
     public int maxBossHealth { get; private set; } = 15;
 
+    public bool hasRessurection { get; private set; } = true;
+
 public void takeDamage(int damage) {
         health -= damage;
         
         if (health <= 0) {
-            GameOver();
+            if (hasRessurection) {
+                Resurrect();
+            } else {
+                GameOver();
+            }
         }
+    }
+    private void Resurrect() {
+        hasRessurection = false;
+        health = maxHealth/2;
+        if (popupText != null) {
+            popupText.Show("RESURRECTED", 2f);
+        }
+      
+    
     }
 public void dealDamage(int damage) {
         bossHealth += damage;
@@ -60,6 +76,7 @@ public void dealDamage(int damage) {
         ball = FindFirstObjectByType<Ball>();
         paddle = FindFirstObjectByType<Paddle>();
         bricks = FindObjectsByType<Brick>(FindObjectsSortMode.None);
+        popupText = FindFirstObjectByType<PopupText>();
     }
 
     private void LoadLevel(int levelId)
@@ -87,12 +104,7 @@ public void dealDamage(int damage) {
     public void OnBallMiss()
     {
         takeDamage(1);
-
-        if (health > 0) {
-            ResetLevel();
-        } else {
-            GameOver();
-        }
+ResetLevel();
     }
 
     private void ResetLevel()
@@ -113,6 +125,7 @@ public void dealDamage(int damage) {
         score = 0;
         health = maxHealth;
         bossHealth = 0;
+        hasRessurection = true;
 
         LoadLevel(1);
     }
