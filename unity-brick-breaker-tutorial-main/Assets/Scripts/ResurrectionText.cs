@@ -2,7 +2,7 @@ using UnityEngine;
 using TMPro;
 using System.Collections;
 
-public class PopupText : MonoBehaviour
+public class PopupTextResurrect : MonoBehaviour
 {
     private TextMeshProUGUI label;
 

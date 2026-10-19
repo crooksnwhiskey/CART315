@@ -84,4 +84,15 @@ after thinking of some more ideas to make the game more sekiro-like, I came up w
 first, a big part of sekiro is the ressurection that happens when you die. I feel like i could make ths pretty easily ... also there is unparryable attacks which i can try to implement, but the the game you can dodge and you cant exactly do that in brick breaker, so I was thinking of adding another key that you have to press at random times to dodge.
 
 oct 19
+I ended up opting for the resurrection path and found a way to revive the player at half health when dead. The game felt unresponsive so I added some text to show the player when you resurrect. I used this as help:
+https://discussions.unity.com/t/gradually-changing-canvas-alpha/690667
 
+I wanted to do the same thing to add a death screen however I had a hard time figuring out how to not immediately restart the game upon death. I figured it out by adding a timer and importantly stopping the ball from appearing so the game doesn't continue after death. 
+
+I also added all my modifications to the second level.
+
+I think I am finished for now, but If I had more time there are still modifications I would make. 
+
+As of right now I feel like the game still lacks long-term playability... the game just stops after both levels are done, this makes the game not very replayable.
+
+in the future I think It would be fun to add more levels and make them more unique to make the game feel more like you are fighting a boss rather than progressing levels.

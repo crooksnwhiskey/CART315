@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 [DefaultExecutionOrder(-1)]
 public class GameManager : MonoBehaviour
@@ -11,7 +12,9 @@ public class GameManager : MonoBehaviour
     private Ball ball;
     private Paddle paddle;
     private Brick[] bricks;
-    private PopupText popupText;
+    private PopupTextResurrect popupText;
+    private PopupTextDeath deathText;
+    private bool isDead = false;
 
     public int level { get; private set; } = 1;
     public int score { get; private set; } = 0;
@@ -76,7 +79,8 @@ public void dealDamage(int damage) {
         ball = FindFirstObjectByType<Ball>();
         paddle = FindFirstObjectByType<Paddle>();
         bricks = FindObjectsByType<Brick>(FindObjectsSortMode.None);
-        popupText = FindFirstObjectByType<PopupText>();
+        popupText = FindFirstObjectByType<PopupTextResurrect>();
+        deathText = FindFirstObjectByType<PopupTextDeath>();
     }
 
     private void LoadLevel(int levelId)
@@ -115,9 +119,22 @@ ResetLevel();
 
     private void GameOver()
     {
+        if (isDead) return; // Prevent multiple game over triggers
+        StartCoroutine(HandleGameOver());
+    }
+    private IEnumerator HandleGameOver() {
+        isDead = true;
+        if(ball != null) {
+            ball.gameObject.SetActive(false); // Hide the ball
+        }
+        if (deathText != null) {
+            deathText.Show("死", 2f);
+        }
+        yield return new WaitForSeconds(3f); // Wait for the death text to finish
+        NewGame(); // Start a new game after the delay
         // Start a new game immediately
         // You can also load a "GameOver" scene instead
-        NewGame();
+        
     }
 
     private void NewGame()
@@ -126,6 +143,7 @@ ResetLevel();
         health = maxHealth;
         bossHealth = 0;
         hasRessurection = true;
+        isDead = false; // Reset the isDead flag for the new game
 
         LoadLevel(1);
     }
