@@ -96,3 +96,7 @@ I think I am finished for now, but If I had more time there are still modificati
 As of right now I feel like the game still lacks long-term playability... the game just stops after both levels are done, this makes the game not very replayable.
 
 in the future I think It would be fun to add more levels and make them more unique to make the game feel more like you are fighting a boss rather than progressing levels.
+
+oct 20
+
+I ended up doing a bit more cause I felt the game was still lacking just a bit more of the sekiro theme so i changed the paddle sprite into a katana I drew. something i didnt think of was if the colour changing aspect would still work once I changed the sprite... by some miracle it did and it looks super cool. Now I am really done I think!
