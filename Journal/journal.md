@@ -100,3 +100,16 @@ in the future I think It would be fun to add more levels and make them more uniq
 oct 20
 
 I ended up doing a bit more cause I felt the game was still lacking just a bit more of the sekiro theme so i changed the paddle sprite into a katana I drew. something i didnt think of was if the colour changing aspect would still work once I changed the sprite... by some miracle it did and it looks super cool. Now I am really done I think!
+
+
+**Prototype 3**
+
+The Idea for this one came from another class where I had made a speaker model in blender.
+
+that along with the noise my mouse makes inspired me to make a soundscape of my desk.
+
+I thought it would be cool to record the sounds that my actual mouse and keyboard make to make it feel more personal.
+
+I found it interesting that since my mouse is silent, the only thing that relly makes noise is my keyboard, so I made that the center of attention.
+
+the desk feels a bit empty still and I want to add different footsteps
