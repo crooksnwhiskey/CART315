@@ -10,6 +10,16 @@ namespace Unity.FPS.Gameplay
         [Header("References")] [Tooltip("Reference to the main camera used for the player")]
         public Camera PlayerCamera;
 
+
+
+        [SerializeField] private bool footstepsEnabled = true;
+        [SerializeField, Range(0f, 1f)] private float footstepsVolume = 0.5f;
+        
+        [SerializeField] private AudioClip[] matFootsteps = default;
+
+        [SerializeField] private AudioClip[] woodFootsteps = default;
+
+
         [Tooltip("Audio source for footsteps, jump, etc...")]
         public AudioSource AudioSource;
 
@@ -274,7 +284,7 @@ namespace Unity.FPS.Gameplay
                         0f), Space.Self);
             }
 
-            // vertical camera rotation
+            // vertical camera rotationƒ
             {
                 // add vertical inputs to the camera's vertical angle
                 m_CameraVerticalAngle += m_InputHandler.GetLookInputsVertical() * RotationSpeed * RotationMultiplier;
@@ -345,7 +355,7 @@ namespace Unity.FPS.Gameplay
                     if (m_FootstepDistanceCounter >= 1f / chosenFootstepSfxFrequency)
                     {
                         m_FootstepDistanceCounter = 0f;
-                        AudioSource.PlayOneShot(FootstepSfx);
+                        AudioSource.PlayOneShot(FootstepSfx, footstepsVolume);
                     }
 
                     // keep track of distance traveled for footsteps sound
@@ -365,6 +375,21 @@ namespace Unity.FPS.Gameplay
 
                     // apply the gravity to the velocity
                     CharacterVelocity += Vector3.down * GravityDownForce * Time.deltaTime;
+                }
+                if(Physics.Raycast(transform.position, Vector3.down, out RaycastHit groundHit, 2f))
+                {
+                    switch(groundHit.collider.tag)
+                    {
+                        case "Mat":
+                            FootstepSfx = matFootsteps[Random.Range(0, matFootsteps.Length-1)];
+                            break;
+                        case "Wood":
+                            FootstepSfx = woodFootsteps[Random.Range(0, woodFootsteps.Length-1)];
+                            break;
+                        default:
+                            FootstepSfx = matFootsteps[Random.Range(0, matFootsteps.Length-1)];
+                            break;
+                    }
                 }
             }
 

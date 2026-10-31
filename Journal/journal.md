@@ -106,10 +106,18 @@ I ended up doing a bit more cause I felt the game was still lacking just a bit m
 
 The Idea for this one came from another class where I had made a speaker model in blender.
 
-that along with the noise my mouse makes inspired me to make a soundscape of my desk.
+that along with the noise my keyboard makes inspired me to make a soundscape of my desk. what i mean by this is I noticed the only sound in my room is my keyboard which is loud not because its a loud keyboard, but rather because the rest of my setup is very quiet.
 
 I thought it would be cool to record the sounds that my actual mouse and keyboard make to make it feel more personal.
 
-I found it interesting that since my mouse is silent, the only thing that relly makes noise is my keyboard, so I made that the center of attention.
+I found it interesting that since my mouse is silent, the only thing that realy makes noise is my keyboard, so I made that the center of attention. 
 
 the desk feels a bit empty still and I want to add different footsteps
+
+oct 30
+
+I followed this tutorial: https://youtu.be/r1dgRE0GM9A to help me implement different footstep sounds depending on the material the player is on. I did this because the game felt a bit empty still because of the lack of objects. making the mousepad a different sound was a way of trying to make the game feel more full while still keeping the aesthetics not cluttered.
+
+earlier i said I wanted to make the keyboard the center of attention so I adjusted the volumes of everything to make that item stick out more and I fixed a problem I was having where the sounds were too low... turns out my speakers were just too loud while i was making the game.
+
+the game still feels a bit short as theres not much to explore, but its a good early prototype for a game where you explore the passive sounds that are usually ignored.
