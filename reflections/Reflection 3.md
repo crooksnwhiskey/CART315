@@ -1,0 +1,7 @@
+one of my favourite ideas from this reading is that a prototype can sometimes be more useful due to what it doesnt include, i.e. filtering. usually, I see progress as adding more of the stuff. more features, mechanics, details etc... but this text made the argument that removing things can be just as important
+
+For example, if I were making a game, I could create a very basic version with only the main mechanic and no finished visuals or sound. This would let me focus entirely on whether the mechanic is fun before spending time on other aspects of the project.
+
+I also found the distinction between material, resolution, and scope interesting. It made me realize that the way an idea is presented can influence how people understand it. A prototype made out of paper might communicate an idea differently than a fully interactive digital version, even if they are both representing the same concept
+
+I think I could apply this approach to my own projects by spending more time making small prototypes instead of immediately trying to build the complete experience I have in mind, a prototype for my prototypes if you will. I realize I have been spending many hours creating prototypes with the mindset of making it a complete game of a prototype, meaning I have an end result of what I want the prototype to look like. If i made smaller more isolated changes it would give me more opportunities to experiment and make changes without feeling like I am undoing a lot of work. 
