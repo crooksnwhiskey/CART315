@@ -11,13 +11,14 @@
             "id": "bd120c84bdfe684e",
             "type": "leaf",
             "state": {
-              "type": "bases",
+              "type": "markdown",
               "state": {
-                "file": "Untitled.base",
-                "viewName": "Table"
+                "file": "journal.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-table",
-              "title": "Untitled"
+              "icon": "lucide-file",
+              "title": "journal"
             }
           }
         ]
@@ -189,7 +190,7 @@
   },
   "active": "bd120c84bdfe684e",
   "lastOpenFiles": [
-    "journal.md",
-    "Untitled.base"
+    "Untitled.base",
+    "journal.md"
   ]
 }

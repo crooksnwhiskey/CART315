@@ -121,3 +121,11 @@ I followed this tutorial: https://youtu.be/r1dgRE0GM9A to help me implement diff
 earlier i said I wanted to make the keyboard the center of attention so I adjusted the volumes of everything to make that item stick out more and I fixed a problem I was having where the sounds were too low... turns out my speakers were just too loud while i was making the game.
 
 the game still feels a bit short as theres not much to explore, but its a good early prototype for a game where you explore the passive sounds that are usually ignored.
+
+Prototyping 4 (extension of 3)
+
+Nov 9 
+
+my original idea for the first enhancement was to turn the speakers off/on when the players interacted with the keyboard. This idea feels like its lacking substance so my new idea is to allow the player to turn the individual speakers off/on, that way the players can experiment with the direction on where the sound is coming from, making the game feel more playful. along with this, I could add some sort of volume control to make the experience even more immersive.
+
+the base of my interaction comes from this video: https://youtu.be/K06lVKiY-sY
