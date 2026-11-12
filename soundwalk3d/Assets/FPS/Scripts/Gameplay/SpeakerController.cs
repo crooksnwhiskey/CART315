@@ -1,15 +1,18 @@
+
 using UnityEngine;
 
 public class SpeakerController : MonoBehaviour
 {
+    public AudioSource offSpeakerL;
+    public AudioSource onSpeakerL;
+    public AudioSource offSpeakerR;
+    public AudioSource onSpeakerR;
 
-public AudioSource offSpeakerL;
-public AudioSource onSpeakerL;
-public AudioSource offSpeakerR;
-public AudioSource onSpeakerR;
-private bool isOn = false;
-public float volume = 1.0f;
-public float volumeIncrement = 0.1f;
+    private bool isLeftOn = false;
+    private bool isRightOn = false;
+
+    public float volume = 1.0f;
+    public float volumeIncrement = 0.1f;
 
     void Start()
     {
@@ -18,35 +21,53 @@ public float volumeIncrement = 0.1f;
         offSpeakerR.volume = volume;
         onSpeakerR.volume = volume;
     }
-public void ToggleSpeaker()
-{
-    isOn = !isOn;
-    if (isOn)
+
+    public void ToggleLeftSpeaker()
     {
-        onSpeakerL.Play();
-        offSpeakerL.Stop();
-        onSpeakerR.Play();
-        offSpeakerR.Stop();
+        isLeftOn = !isLeftOn;
+
+        if (isLeftOn)
+        {
+            onSpeakerL.Play();
+            offSpeakerL.Stop();
+        }
+        else
+        {
+            offSpeakerL.Play();
+            onSpeakerL.Stop();
+        }
     }
-    else
+
+    public void ToggleRightSpeaker()
     {
-        offSpeakerL.Play();
-        onSpeakerL.Stop();
-        offSpeakerR.Play();
-        onSpeakerR.Stop();
-      }
+        isRightOn = !isRightOn;
+
+        if (isRightOn)
+        {
+            onSpeakerR.Play();
+            offSpeakerR.Stop();
+        }
+        else
+        {
+            offSpeakerR.Play();
+            onSpeakerR.Stop();
+        }
     }
+
     public void IncreaseVolume()
     {
         volume = Mathf.Clamp(volume + volumeIncrement, 0f, 2f);
-        offSpeakerL.volume = volume;
-        onSpeakerL.volume = volume;
-        offSpeakerR.volume = volume;
-        onSpeakerR.volume = volume;
+        UpdateVolume();
     }
+
     public void DecreaseVolume()
     {
         volume = Mathf.Clamp(volume - volumeIncrement, 0f, 2f);
+        UpdateVolume();
+    }
+
+    void UpdateVolume()
+    {
         offSpeakerL.volume = volume;
         onSpeakerL.volume = volume;
         offSpeakerR.volume = volume;

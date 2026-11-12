@@ -129,3 +129,5 @@ Nov 9
 my original idea for the first enhancement was to turn the speakers off/on when the players interacted with the keyboard. This idea feels like its lacking substance so my new idea is to allow the player to turn the individual speakers off/on, that way the players can experiment with the direction on where the sound is coming from, making the game feel more playful. along with this, I could add some sort of volume control to make the experience even more immersive.
 
 the base of my interaction comes from this video: https://youtu.be/K06lVKiY-sY
+
+
