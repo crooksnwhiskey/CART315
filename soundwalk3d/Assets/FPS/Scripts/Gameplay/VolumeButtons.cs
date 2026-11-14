@@ -1,8 +1,10 @@
 using UnityEngine;
 
+
+
 public class VolumeButtons : MonoBehaviour, IInteractable
 {
-    
+    public ObjectOutline outline;
     public SpeakerController speakerController;
     public bool volumeUp;
 
@@ -16,5 +18,13 @@ public class VolumeButtons : MonoBehaviour, IInteractable
         {
             speakerController.DecreaseVolume();
         }
+    }
+    public void OnHover()
+    {
+        outline.EnableOutline();
+    }
+    public void OnHoverExit()
+    {
+        outline.DisableOutline();
     }
 }

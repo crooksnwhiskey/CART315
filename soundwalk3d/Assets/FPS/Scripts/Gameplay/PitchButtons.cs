@@ -6,6 +6,7 @@ public class SpeedButtons : MonoBehaviour, IInteractable
     public SpeakerController speakerController;
     public bool speedUp;
     public bool levelSpeed;
+    public ObjectOutline outline;
 
     public void Interact()
     {
@@ -21,5 +22,13 @@ public class SpeedButtons : MonoBehaviour, IInteractable
         {
             speakerController.DecreaseAudioSpeed();
         }
+    }
+    public void OnHover()
+    {
+        outline.EnableOutline();
+    }
+    public void OnHoverExit()
+    {
+        outline.DisableOutline();   
     }
 }

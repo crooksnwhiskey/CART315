@@ -1,33 +1,49 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine.InputSystem;
 using UnityEngine;
 
 interface IInteractable
 {
     public void Interact();
+    public void OnHover();
+    public void OnHoverExit();
 }
 
 public class Interactor : MonoBehaviour
 {
+    public Transform InteractionSource;
+    public float InteractionRange;
 
-public Transform InteractionSource;
-public float InteractionRange;   
-
- void Start() {
-        
-    }
+    private IInteractable currentInteractable;
 
     void Update()
     {
-        if (Keyboard.current.eKey.wasPressedThisFrame)
+        Ray r = new Ray(InteractionSource.position, InteractionSource.forward);
+
+        IInteractable newInteractable = null;
+
+        if (Physics.Raycast(r, out RaycastHit hitInfo, InteractionRange))
         {
-            Ray r = new Ray(InteractionSource.position, InteractionSource.forward);
-            if (Physics.Raycast(r, out RaycastHit hitInfo, InteractionRange)) {
-                if(hitInfo.collider.gameObject.TryGetComponent(out IInteractable interactObj)) {
-                    interactObj.Interact();
-                }     
+            hitInfo.collider.gameObject.TryGetComponent(out newInteractable);
+        }
+
+        if (newInteractable != currentInteractable)
+        {
+            if (currentInteractable != null)
+            {
+                currentInteractable.OnHoverExit();
             }
+
+            currentInteractable = newInteractable;
+
+            if (currentInteractable != null)
+            {
+                currentInteractable.OnHover();
+            }
+        }
+
+        if (Keyboard.current.eKey.wasPressedThisFrame && currentInteractable != null)
+        {
+            currentInteractable.Interact();
         }
     }
 }
