@@ -13,6 +13,8 @@ public class SpeakerController : MonoBehaviour
 
     public float volume = 1.0f;
     public float volumeIncrement = 0.1f;
+    public float audioSpeed = 1.0f;
+    public float audioSpeedIncrement = 0.01f;
 
     void Start()
     {
@@ -64,6 +66,29 @@ public class SpeakerController : MonoBehaviour
     {
         volume = Mathf.Clamp(volume - volumeIncrement, 0f, 2f);
         UpdateVolume();
+    }
+
+    public void IncreaseAudioSpeed()
+    {
+        audioSpeed += audioSpeedIncrement;
+        UpdateAudioSpeed();
+    }
+public void DecreaseAudioSpeed()
+    {
+        audioSpeed -= audioSpeedIncrement;
+        UpdateAudioSpeed();
+    }
+    public void LevelAudioSpeed()
+    {
+        audioSpeed = 1.0f;
+        UpdateAudioSpeed();
+    }
+    void UpdateAudioSpeed()
+    {
+        offSpeakerL.pitch = audioSpeed;
+        onSpeakerL.pitch = audioSpeed;
+        
+ 
     }
 
     void UpdateVolume()

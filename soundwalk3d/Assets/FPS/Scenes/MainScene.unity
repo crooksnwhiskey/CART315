@@ -9257,6 +9257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: fps.Gameplay::PowerSwitch
   speakerController: {fileID: 1862493686}
+  isLeftSpeaker: 1
 --- !u!1 &1834311162
 GameObject:
   m_ObjectHideFlags: 0
@@ -10756,6 +10757,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: fps.Gameplay::PowerSwitch
   speakerController: {fileID: 246685224}
+  isLeftSpeaker: 0
 --- !u!1 &2113262624
 GameObject:
   m_ObjectHideFlags: 0
