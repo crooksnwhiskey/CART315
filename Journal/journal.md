@@ -131,3 +131,10 @@ my original idea for the first enhancement was to turn the speakers off/on when 
 the base of my interaction comes from this video: https://youtu.be/K06lVKiY-sY
 
 
+nov 14
+
+after adding the volume control, I gained a clearer vision of where I could take this game next. The only substance the game has other than walking around is playing with the sounds coming from the speakers which makes me want to improve that experience. i did this by adding a pitch control, letting the players use the speakers out of sync so they can find interesting patterns.
+
+I think what is lacking in the game is some sort of indication for the players on what they can do. I was thinking of changing the buttons on the keyboard to a separate midi controller, and connecting cables to the speakers, giving the players a path to follow.
+
+other than this, I think the overall environments needs a glow up, especially the skybox. Right now the environment doesnt fit any sort of narrative and is more confusing than anything.
