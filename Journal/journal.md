@@ -138,3 +138,8 @@ after adding the volume control, I gained a clearer vision of where I could take
 I think what is lacking in the game is some sort of indication for the players on what they can do. I was thinking of changing the buttons on the keyboard to a separate midi controller, and connecting cables to the speakers, giving the players a path to follow.
 
 other than this, I think the overall environments needs a glow up, especially the skybox. Right now the environment doesnt fit any sort of narrative and is more confusing than anything.
+
+Nov 16
+
+after finishing the user interaction, I started on making the game look nicer.
+I changed the skybox and updated the assets to give the game a more polished feel. this also helped give the game more direction because the more important items that I would want the user to interact with look nicer than the others. I think adding text was the biggest upgrade because it tells the players directly what to do so there is no confusion. the only thing that is left is to add 
