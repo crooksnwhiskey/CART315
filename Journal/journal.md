@@ -143,3 +143,7 @@ Nov 16
 
 after finishing the user interaction, I started on making the game look nicer.
 I changed the skybox and updated the assets to give the game a more polished feel. this also helped give the game more direction because the more important items that I would want the user to interact with look nicer than the others. I think adding text was the biggest upgrade because it tells the players directly what to do so there is no confusion. the only thing that is left is to add 
+
+**GAME JAM**
+
+https://discussions.unity.com/t/move-player-towards-gameobject/903813

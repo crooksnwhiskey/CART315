@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "game jam idea.md",
+                "file": "journal.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "game jam idea"
+              "title": "journal"
             }
           }
         ],
@@ -205,8 +205,8 @@
   },
   "active": "09d41a02e9979662",
   "lastOpenFiles": [
+    "game jam idea.md",
     "Untitled.base",
-    "journal.md",
-    "game jam idea.md"
+    "journal.md"
   ]
 }
