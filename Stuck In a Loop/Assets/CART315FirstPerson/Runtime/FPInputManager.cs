@@ -41,7 +41,7 @@ namespace Cart315.FirstPerson
         private void OnEnable() => _runtimeActions?.Enable();
 
         // Called by the movement component, so input is read before movement every frame.
-        internal void ReadInput()
+        public void ReadInput()
         {
             ClearInput();
             if (!isActiveAndEnabled || _runtimeActions == null) return;

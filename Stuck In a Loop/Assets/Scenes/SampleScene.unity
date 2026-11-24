@@ -2667,6 +2667,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1682737864}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1710342393 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1656500101664370645, guid: 92efd63b18b726040a8e16e8643afde0, type: 3}
+  m_PrefabInstance: {fileID: 1948810631}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1710342403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710342393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06c235dc012394de8a9981ce6473dd88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AutoMove
+  waypoints:
+  - {fileID: 345215678}
+  - {fileID: 667121402}
+  - {fileID: 1349771458}
+  - {fileID: 1296661300}
+  - {fileID: 1622833984}
+  - {fileID: 375141230}
+  - {fileID: 1527301615}
+  - {fileID: 1225558618}
+  - {fileID: 1677873748}
+  - {fileID: 658330759}
+  speed: 0.3
 --- !u!1 &1899833879
 GameObject:
   m_ObjectHideFlags: 0
@@ -2847,6 +2876,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: CART315 First Person
       objectReference: {fileID: 0}
+    - target: {fileID: 2269117464549292467, guid: 92efd63b18b726040a8e16e8643afde0, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837351831601788211, guid: 92efd63b18b726040a8e16e8643afde0, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4549146868092147746, guid: 92efd63b18b726040a8e16e8643afde0, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5309667239617855623, guid: 92efd63b18b726040a8e16e8643afde0, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5856394514190234186, guid: 92efd63b18b726040a8e16e8643afde0, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6500389095236949462, guid: 92efd63b18b726040a8e16e8643afde0, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6500389095236949462, guid: 92efd63b18b726040a8e16e8643afde0, type: 3}
       propertyPath: _mouseSensitivity
       value: 0.396
@@ -2854,7 +2907,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1656500101664370645, guid: 92efd63b18b726040a8e16e8643afde0, type: 3}
+      insertIndex: 2
+      addedObject: {fileID: 1710342403}
   m_SourcePrefab: {fileID: 100100000, guid: 92efd63b18b726040a8e16e8643afde0, type: 3}
 --- !u!1 &2037017571
 GameObject:
